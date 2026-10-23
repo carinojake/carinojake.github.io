@@ -1,21 +1,23 @@
 {
   "name": "jake-portfolio",
   "version": "1.0.0",
-  "description": "Executive Portfolio & Smart AgTech Platform for Jake",
+  "description": "Executive Portfolio & Smart AgTech Platform for Nitipat Khumwong (Jake)",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "astro build && touch dist/.nojekyll && cd dist && git init && git checkout -b gh-pages && git add . && git commit -m 'deploy: update portfolio' && git remote add origin https://github.com/carinojake/carinojake.github.io.git && git push -f origin gh-pages && rm -rf .git && cd .."
   },
   "keywords": [
     "agtech",
     "portfolio",
     "ai-automation",
-    "rubber-plantation"
+    "rubber-plantation",
+    "govtech"
   ],
-  "author": "Jake",
+  "author": "Nitipat Khumwong (Jake)",
   "license": "ISC",
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
