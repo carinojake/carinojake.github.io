@@ -1,0 +1,94 @@
+---
+import { profileData } from '../data/profile';
+---
+
+<section id="projects" class="py-24 bg-[#FAF8F2]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+      <span class="text-xs uppercase tracking-widest text-[#B38B42] font-bold">
+        Featured Innovations & Architecture
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900">
+        ผลงานและนวัตกรรมคัดสรร
+      </h2>
+      <div class="w-16 h-0.5 bg-[#B38B42] mx-auto"></div>
+      <p class="text-stone-600 font-light text-base sm:text-lg">
+        กรณีศึกษาการพัฒนาระบบจริงที่ขับเคลื่อนด้วยวินัยวิศวกรรม ความปลอดภัยข้อมูล และการแก้ปัญหาที่ต้นตอ
+      </p>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+      {profileData.projects.map((project) => (
+        <article class="bg-white rounded-2xl border border-[#EAE1D2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          
+          <!-- Card Top Bar & Category -->
+          <div class="p-6 sm:p-8 space-y-4">
+            <div class="flex items-center justify-between gap-4">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-[#FAF5EC] text-[#8C6422] border border-[#E0D3BE]">
+                {project.category}
+              </span>
+              <span class="text-xs text-stone-400 font-mono">
+                #{project.id}
+              </span>
+            </div>
+
+            <!-- Title & Tagline -->
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-stone-900 group-hover:text-[#B38B42] transition-colors">
+                {project.title}
+              </h3>
+              <p class="text-sm font-medium text-[#143D31] mt-1">
+                {project.tagline}
+              </p>
+            </div>
+
+            <!-- Description -->
+            <p class="text-stone-600 text-sm leading-relaxed font-light">
+              {project.description}
+            </p>
+
+            <!-- Metrics Highlight Badges -->
+            <div class="grid grid-cols-2 gap-3 py-3 border-y border-stone-100 bg-[#FCFBF8] rounded-xl px-4">
+              {project.metrics.map((metric) => (
+                <div>
+                  <div class="text-[11px] text-stone-500 font-medium">{metric.label}</div>
+                  <div class="text-base font-bold text-stone-900 mt-0.5 font-serif">{metric.value}</div>
+                </div>
+              ))}
+            </div>
+
+            <!-- Architecture & Engineering Highlights -->
+            <div class="space-y-2 pt-2">
+              <div class="text-xs font-bold uppercase tracking-wider text-stone-500">
+                จุดเด่นทางวิศวกรรม (Highlights):
+              </div>
+              <ul class="space-y-1.5 text-xs text-stone-600">
+                {project.highlights.map((point) => (
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#143D31] font-bold">✓</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card Footer & Tech Stack Badges -->
+          <div class="bg-[#FAF8F2] px-6 py-4 border-t border-[#EAE1D2] flex flex-wrap items-center gap-2">
+            <span class="text-[11px] font-semibold text-stone-500 mr-1">Stack:</span>
+            {project.techStack.map((tech) => (
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-medium bg-white text-stone-700 border border-stone-200">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>

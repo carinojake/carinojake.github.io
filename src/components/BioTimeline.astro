@@ -1,0 +1,271 @@
+---
+import { profileData } from '../data/profile';
+---
+
+<section id="about" class="py-20 bg-white border-t border-b border-[#EAE1D2]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header: Philosophy & Vision -->
+    <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+      <span class="text-xs uppercase tracking-widest text-[#B38B42] font-bold">
+        Professional Identity & Core Values
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900">
+        เจตนารมณ์และปรัชญาการทำงาน
+      </h2>
+      <div class="w-16 h-0.5 bg-[#B38B42] mx-auto"></div>
+      <p class="text-stone-600 font-light text-base sm:text-lg">
+        การผสานความเชี่ยวชาญด้านฐานข้อมูลภาครัฐ สถาปัตยกรรม AI และพลังใจที่ไม่ยอมแพ้ เพื่อรับใช้สังคมและประเทศชาติ
+      </p>
+    </div>
+
+    <!-- Editorial 3-Pillar Philosophy Block ("ลุย ระบบ ล้ำ") -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+      
+      <!-- Pillar 1: ลุย -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-[#FAF8F2] border border-[#EAE1D2] space-y-3 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-3 text-[#143D31]">
+          <span class="w-8 h-8 rounded-full bg-[#143D31] text-white flex items-center justify-center font-bold text-sm">1</span>
+          <h3 class="text-lg font-serif font-bold text-stone-900">ลุย (Action-Oriented)</h3>
+        </div>
+        <p class="text-xs font-semibold text-[#8C6422]">
+          แก้ปัญหาจากหน้างานจริง (Domain-Driven)
+        </p>
+        <p class="text-stone-600 leading-relaxed font-light text-xs sm:text-sm">
+          ลงมือแก้ปัญหาจากความเข้าใจลึกซึ้งในพื้นที่จริง ไม่ว่าจะในฐานะเจ้าของสวนยางพารา หรือผู้วางระบบเอกสารภาครัฐ มุ่งขจัดจุดคอขวดและสร้างโซลูชันที่ใช้งานได้จริง ไม่ใช่เพียงทฤษฎีในกระดาษ
+        </p>
+      </div>
+
+      <!-- Pillar 2: ระบบ -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-[#FAF8F2] border border-[#EAE1D2] space-y-3 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-3 text-[#B38B42]">
+          <span class="w-8 h-8 rounded-full bg-[#B38B42] text-white flex items-center justify-center font-bold text-sm">2</span>
+          <h3 class="text-lg font-serif font-bold text-stone-900">ระบบ (Systematic Value)</h3>
+        </div>
+        <p class="text-xs font-semibold text-[#8C6422]">
+          สถาปัตยกรรมรัดกุม คุ้มค่า ปลอดภัย
+        </p>
+        <p class="text-stone-600 leading-relaxed font-light text-xs sm:text-sm">
+          บริหารจัดการข้อมูลและงบประมาณด้วยหลักธรรมาภิบาล (PMQA, SLA, KM) โค้ดสะอาด สถาปัตยกรรมฐานข้อมูลที่มีประสิทธิภาพ ป้องกันรอยรั่วไหล และลดขั้นตอนเอกสารซ้ำซ้อน
+        </p>
+      </div>
+
+      <!-- Pillar 3: ล้ำ -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-[#FAF8F2] border border-[#EAE1D2] space-y-3 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-3 text-[#143D31]">
+          <span class="w-8 h-8 rounded-full bg-[#143D31] text-white flex items-center justify-center font-bold text-sm">3</span>
+          <h3 class="text-lg font-serif font-bold text-stone-900">ล้ำ (Automation Mindset)</h3>
+        </div>
+        <p class="text-xs font-semibold text-[#8C6422]">
+          AI ปลดล็อกศักยภาพมนุษย์
+        </p>
+        <p class="text-stone-600 leading-relaxed font-light text-xs sm:text-sm">
+          นำ Generative AI, Multimodal OCR, และ Workflow Automation มาช่วยงานสรุปเอกสาร ค้นคว้าข้อมูล และวิเคราะห์งบประมาณ เปลี่ยนงานประจำที่เสียเวลาให้เป็นระบบอัตโนมัติ 24/7
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Section 1: Timeline of Experience -->
+    <div id="experience" class="pt-6">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-[#B38B42] font-bold">
+          Proven Career Milestones
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900">
+          ประสบการณ์ทำงานเชิงบริหารและภาครัฐ (12+ ปี)
+        </h3>
+        <p class="text-stone-600 font-light text-sm">
+          เส้นทางแห่งความมุ่งมั่น จากหน่วยงานระดับกระทรวง องค์กรสาธารณกุศล สู่การพัฒนานวัตกรรมระดับประเทศ
+        </p>
+      </div>
+
+      <!-- Timeline Nodes -->
+      <div class="relative border-l-2 border-[#EAE1D2] ml-4 md:ml-28 space-y-12">
+        {profileData.milestones.map((item) => (
+          <div class="relative pl-8 md:pl-12 group">
+            
+            <!-- Node Dot -->
+            <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-[#B38B42] group-hover:scale-125 transition-transform"></div>
+
+            <!-- Card Content -->
+            <div class="bg-[#FAF8F2] p-6 sm:p-8 rounded-2xl border border-[#EAE1D2] shadow-sm hover:shadow-md transition-shadow space-y-4">
+              
+              <!-- Badges Header -->
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-[#EAE1D2] text-stone-800">
+                  {item.period}
+                </span>
+                <span class="text-xs font-semibold tracking-wide px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+                  หมวด: {item.category}
+                </span>
+              </div>
+              
+              <!-- Role & Org -->
+              <div>
+                <h4 class="text-xl font-serif font-bold text-stone-900">
+                  {item.role}
+                </h4>
+                <div class="text-sm font-semibold text-[#8C6422] mt-0.5">
+                  {item.organization}
+                </div>
+              </div>
+
+              <!-- Official Badge Alert (If available) -->
+              {item.badge && (
+                <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-900 font-medium flex items-center gap-2">
+                  <span class="text-amber-600 font-bold">🎖️</span>
+                  <span>{item.badge}</span>
+                </div>
+              )}
+
+              <!-- Description -->
+              <p class="text-stone-600 text-sm leading-relaxed font-light">
+                {item.description}
+              </p>
+
+              <!-- Special Competency Pillars for Justice Ministry (4 Dimensions) -->
+              {item.competencyPillars && item.competencyPillars.length > 0 && (
+                <div class="pt-2 space-y-3">
+                  <div class="text-xs font-bold uppercase tracking-wider text-[#143D31] flex items-center gap-1.5">
+                    <span>⚡</span>
+                    <span>สรุปผลสัมฤทธิ์ 4 มิติสมรรถนะเชิงวิชาชีพ (4 Core Competencies):</span>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {item.competencyPillars.map((pillar) => (
+                      <div class="p-3.5 rounded-xl bg-white border border-[#EAE1D2] space-y-1">
+                        <div class="text-xs font-bold text-stone-900">{pillar.title}</div>
+                        <div class="text-[11px] text-stone-600 leading-relaxed font-light">{pillar.desc}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <!-- Highlights Bullet Points -->
+              {item.highlights && item.highlights.length > 0 && (
+                <div class="pt-3 border-t border-stone-200/70 space-y-1.5">
+                  <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500">ผลงานและบทบาทสำคัญ:</div>
+                  <ul class="space-y-1.5 text-xs text-stone-600">
+                    {item.highlights.map((h) => (
+                      <li class="flex items-start gap-2">
+                        <span class="text-[#143D31] font-bold">✓</span>
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+            </div>
+
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Section 2: Dedicated Official Credentials & Certifications Gallery -->
+    <div id="credentials" class="pt-24 border-t border-[#EAE1D2] mt-20">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+        <span class="text-xs uppercase tracking-widest text-[#B38B42] font-bold">
+          Official Credentials & Certified Accomplishments
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900">
+          วุฒิบัตรและหนังสือรับรองทางการ
+        </h3>
+        <div class="w-16 h-0.5 bg-[#B38B42] mx-auto"></div>
+        <p class="text-stone-600 font-light text-sm sm:text-base">
+          หลักฐานยืนยันความรู้ ความเชี่ยวชาญ และความมุ่งมั่นในการปฏิบัติหน้าที่ระดับชาติและระดับนานาชาติ
+        </p>
+      </div>
+
+      <!-- Credential Cards Grid (4 Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {profileData.credentials.map((cred) => (
+          <div class="bg-[#FAF8F2] rounded-2xl p-7 border border-[#EAE1D2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-5 relative overflow-hidden group">
+            
+            <!-- Top Gold Bar Line -->
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#B38B42] via-[#C5A059] to-[#143D31]"></div>
+
+            <div class="space-y-4">
+              
+              <!-- Badges Bar -->
+              <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+                <span class={`text-[11px] font-bold tracking-wider px-3 py-1 rounded-full border ${cred.badgeColor}`}>
+                  {cred.category}
+                </span>
+                <span class="text-[11px] font-mono text-stone-500 font-semibold">
+                  {cred.issueDate}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <div>
+                <h4 class="text-lg sm:text-xl font-serif font-bold text-stone-900 group-hover:text-[#B38B42] transition-colors leading-snug">
+                  {cred.title}
+                </h4>
+                <p class="text-xs font-semibold text-[#143D31] mt-1">
+                  {cred.organization}
+                </p>
+                {cred.docNumber && (
+                  <p class="text-[11px] text-stone-500 mt-0.5 font-mono">
+                    {cred.docNumber}
+                  </p>
+                )}
+              </div>
+
+              <!-- Description -->
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+                {cred.description}
+              </p>
+
+              <!-- Skills Acquired -->
+              <div class="space-y-1.5 pt-2">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-stone-500">
+                  ทักษะและสมรรถนะที่ผ่านการรับรอง:
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  {cred.skillsAcquired.map((skill) => (
+                    <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-white text-stone-700 border border-stone-200 shadow-2xs">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Card Footer: Signatories & Verified Mark -->
+            <div class="pt-4 border-t border-stone-200/80 space-y-2">
+              <div class="text-[10px] uppercase tracking-wider text-stone-400 font-bold">
+                ผู้ลงนามรับรองทางการ:
+              </div>
+              <ul class="text-[11px] text-stone-600 space-y-0.5 font-medium">
+                {cred.signatories.map((sig) => (
+                  <li class="flex items-center gap-1.5">
+                    <span class="text-gold-700">✍️</span>
+                    <span>{sig}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <div class="pt-2 flex items-center justify-between text-[11px] text-emerald-800">
+                <span class="inline-flex items-center gap-1 font-semibold">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  Official Verified Credential
+                </span>
+                <span class="text-stone-400 font-serif italic text-xs">ต้นฉบับเอกสารราชการ</span>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+
+  </div>
+</section>

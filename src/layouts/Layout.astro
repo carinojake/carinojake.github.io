@@ -1,0 +1,72 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "พี่แจ็ค (Jake) | Executive Profile & Smart AgTech Portfolio",
+  description = "เว็บไซต์ประวัติ ผลงานนวัตกรรม และระบบ AI Automation โดย พี่แจ็ค (Jake) ผู้บริหารระบบเทคโนโลยีและเจ้าของสวนยางพารายุคใหม่"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph / Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Jake Executive Portfolio" />
+
+    <!-- Google Fonts: Editorial Serif + Modern Clean Thai & English Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style is:global>
+      :root {
+        --font-serif: 'Playfair Display', 'Noto Serif Thai', Georgia, serif;
+        --font-sans: 'Plus Jakarta Sans', 'Prompt', system-ui, sans-serif;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: #FAF8F2;
+        color: #262626;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1, h2, h3, .font-editorial {
+        font-family: var(--font-serif);
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAF8F2;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D9CEBA;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #B38B42;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-gold-500/20 selection:text-gold-700 min-h-screen flex flex-col justify-between">
+    <slot />
+  </body>
+</html>

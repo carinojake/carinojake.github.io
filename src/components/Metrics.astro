@@ -1,0 +1,42 @@
+---
+import { profileData } from '../data/profile';
+---
+
+<section id="metrics" class="py-20 bg-[#143D31] text-white relative overflow-hidden">
+  <!-- Subtle Texture & Glow -->
+  <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#1B4D3E] opacity-60 blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-[#C5A059] opacity-20 blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    
+    <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+      <span class="text-xs uppercase tracking-widest text-[#E8DFD0] font-bold">
+        Proven Engineering Impact
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">
+        ผลลัพธ์ที่พิสูจน์ได้ด้วยข้อมูลจริง
+      </h2>
+      <div class="w-16 h-0.5 bg-[#C5A059] mx-auto"></div>
+      <p class="text-emerald-100/80 font-light text-sm sm:text-base">
+        ตามหลักการวิศวกรรม: งานระบบที่ดีต้องวัดผลได้ ลดความผิดพลาดของมนุษย์ และสร้างมูลค่าคุ้มค่าการลงทุน
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {profileData.metrics.map((item) => (
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#C5A059]/40 transition-colors text-center group">
+          <div class="text-4xl sm:text-5xl font-serif font-bold text-[#E8DFD0] group-hover:text-white transition-colors">
+            {item.value}
+          </div>
+          <div class="text-base font-semibold text-white mt-3">
+            {item.label}
+          </div>
+          <div class="text-xs text-emerald-100/70 mt-1 font-light">
+            {item.detail}
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

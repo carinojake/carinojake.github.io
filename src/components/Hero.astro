@@ -1,0 +1,173 @@
+---
+import { profileData } from '../data/profile';
+---
+
+<section class="relative overflow-hidden pt-10 pb-20 md:pt-16 md:pb-28">
+  <!-- Subtle Ornamental Accents -->
+  <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#EAE1D2]/40 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-[#C5A059]/10 blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Text Content Column -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        
+        <!-- Dignified Mission Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF5EC] border border-[#E0D3BE] text-xs font-semibold text-[#8C6422] tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-[#1B4D3E] animate-pulse"></span>
+          {profileData.name.candidacyNote}
+        </div>
+
+        <!-- Main Title & Name -->
+        <div class="space-y-2">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-stone-900 leading-tight">
+            {profileData.name.th} <br />
+            <span class="text-[#B38B42] italic font-normal text-3xl sm:text-4xl lg:text-5xl">
+              ({profileData.name.nickname})
+            </span>
+          </h1>
+          <p class="text-base sm:text-lg font-medium text-[#143D31] tracking-wide">
+            {profileData.name.title}
+          </p>
+          <p class="text-xs text-stone-500 font-light">
+            {profileData.name.subtitle}
+          </p>
+        </div>
+
+        <!-- Tagline & Philosophy -->
+        <div class="py-2 px-4 rounded-xl bg-white border border-[#EAE1D2] inline-block shadow-sm">
+          <span class="font-serif font-bold text-stone-800 text-sm">
+            ปรัชญาหลัก: <span class="text-[#B38B42]">"ลุย • ระบบ • ล้ำ"</span>
+          </span>
+          <span class="text-xs text-stone-500 ml-2 hidden sm:inline">
+            (Automation Mindset • Real-world Domain • High Resilience)
+          </span>
+        </div>
+
+        <!-- Subtitle / Bio Intro -->
+        <p class="text-base sm:text-lg text-stone-600 max-w-2xl leading-relaxed mx-auto lg:mx-0 font-light">
+          {profileData.bioIntro}
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+          <a
+            href="#projects"
+            class="px-7 py-3 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#143D31] text-white hover:bg-[#0F2E24] shadow-md hover:shadow-lg transition-all"
+          >
+            ดูผลงานนวัตกรรม & GovTech
+          </a>
+          <a
+            href="#experience"
+            class="px-7 py-3 rounded-full text-xs font-semibold tracking-wider uppercase bg-white text-stone-800 border border-[#D9CEBA] hover:border-[#B38B42] hover:text-[#B38B42] shadow-sm hover:shadow transition-all"
+          >
+            ประวัติการทำงานภาครัฐ
+          </a>
+          <a
+            href="#contact"
+            class="px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-[#8C6422] hover:underline"
+          >
+            ช่องทางติดต่อ →
+          </a>
+        </div>
+
+        <!-- Pillar Badges -->
+        <div class="pt-6 border-t border-[#EAE1D2] grid grid-cols-3 gap-3 text-center lg:text-left">
+          <div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">การศึกษา</div>
+            <div class="text-xs font-bold text-stone-800 mt-0.5">วท.บ. วิทยาการคอมพิวเตอร์</div>
+            <div class="text-[10px] text-stone-500">มรภ.จันทรเกษม (2554)</div>
+          </div>
+          <div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">การพัฒนาสากล</div>
+            <div class="text-xs font-bold text-stone-800 mt-0.5">ตัวแทนเยาวชน JICA</div>
+            <div class="text-[10px] text-stone-500">ICT Policy ณ ประเทศญี่ปุ่น</div>
+          </div>
+          <div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">ประสบการณ์หลัก</div>
+            <div class="text-xs font-bold text-stone-800 mt-0.5">12+ ปี ไอทีภาครัฐ</div>
+            <div class="text-[10px] text-stone-500">พม. & สภากาชาดไทย</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Visual Card / Profile Portrait Column -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-md">
+          
+          <!-- Outer Golden Border Frame (Channarong Signature Warmth) -->
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-[#C5A059] via-[#E8DFD0] to-[#143D31] opacity-40 blur-sm"></div>
+          
+          <div class="relative bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-[#EAE1D2]">
+            
+            <!-- Portrait Image Area / Executive Photo -->
+            <div class="relative rounded-2xl overflow-hidden bg-gradient-to-b from-[#FAF8F2] to-[#EAE1D2] border border-[#D9CEBA] p-4 text-center">
+              
+              <div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md border-2 border-white mb-4 group">
+                <img
+                  src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/profile.png`}
+                  alt="นายนิติพัฒน์ คุ้มวงษ์ (แจ็ค)"
+                  class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 via-transparent to-transparent p-3 text-left">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-xs text-[10px] font-bold text-[#143D31]">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    พร้อมเริ่มงานทันที
+                  </span>
+                </div>
+              </div>
+
+              <h2 class="text-xl font-serif font-bold text-stone-900">
+                {profileData.name.th}
+              </h2>
+              <p class="text-xs text-[#8C6422] font-semibold mt-0.5">
+                {profileData.name.en} ({profileData.name.nickname})
+              </p>
+
+              <!-- Profile Details Box -->
+              <div class="mt-4 w-full py-2.5 px-3.5 rounded-lg bg-stone-50 border border-stone-200 text-xs text-stone-600 space-y-1.5 text-left">
+                <div class="flex items-center justify-between">
+                  <span class="text-stone-500">เบอร์โทร:</span>
+                  <a href={`tel:${profileData.contact.phone}`} class="font-semibold text-stone-800 hover:text-gold-700">
+                    {profileData.contact.phone}
+                  </a>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-stone-500">อีเมล:</span>
+                  <span class="font-semibold text-stone-800 text-[11px]">{profileData.contact.email}</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-stone-500">ภูมิลำเนา:</span>
+                  <span class="font-semibold text-stone-800">{profileData.contact.location}</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-stone-500">สถานะ:</span>
+                  <span class="font-semibold text-[#143D31]">ผู้ฟื้นฟูสภาวะ Stroke 4 ปี ด้วย AI</span>
+                </div>
+              </div>
+
+              <div class="mt-3 text-[11px] text-stone-600 italic px-2">
+                {profileData.aboutMe.resilienceQuote}
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Bar -->
+            <div class="mt-4 pt-3 flex items-center justify-between text-xs text-stone-500 border-t border-stone-100">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                พร้อมปฏิบัติงาน (WFH / รัฐสภา)
+              </span>
+              <span class="font-serif italic text-gold-700 font-semibold">Art for all Spirit</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

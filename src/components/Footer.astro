@@ -1,0 +1,51 @@
+---
+import { profileData } from '../data/profile';
+---
+
+<footer class="bg-[#171717] text-stone-300 py-16 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-800">
+      
+      <!-- Brand & Tagline -->
+      <div class="md:col-span-7 space-y-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#B38B42] to-[#8C6422] flex items-center justify-center text-white font-serif font-bold text-sm">
+            น
+          </div>
+          <span class="font-serif font-bold text-lg text-white">
+            {profileData.name.th} ({profileData.name.nickname})
+          </span>
+        </div>
+        <p class="text-xs text-stone-400 max-w-lg font-light leading-relaxed">
+          {profileData.tagline}
+        </p>
+        <p class="text-[11px] text-[#B38B42] font-medium">
+          {profileData.name.candidacyNote}
+        </p>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="md:col-span-5 flex flex-wrap items-center justify-start md:justify-end gap-5 text-xs text-stone-400">
+        <a href="#about" class="hover:text-gold-500 transition-colors">ชีวประวัติ</a>
+        <a href="#experience" class="hover:text-gold-500 transition-colors">ประสบการณ์</a>
+        <a href="#projects" class="hover:text-gold-500 transition-colors">ผลงานนวัตกรรม</a>
+        <a href="#articles" class="hover:text-gold-500 transition-colors">บทความ</a>
+        <a href="#contact" class="hover:text-gold-500 transition-colors">ติดต่อ</a>
+        <a href="#" class="text-[#B38B42] hover:underline">กลับขึ้นด้านบน ↑</a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-4">
+      <div>
+        © 2026 {profileData.name.th} ({profileData.name.en}). All rights reserved.
+      </div>
+      <div class="flex items-center gap-4">
+        <span>โทร: {profileData.contact.phone}</span>
+        <span>•</span>
+        <span>{profileData.contact.email}</span>
+      </div>
+    </div>
+  </div>
+</footer>
