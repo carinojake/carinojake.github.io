@@ -32,6 +32,7 @@ export interface Credential {
   skillsAcquired: string[];
   badgeColor: string;
   category: 'Government' | 'International' | 'Software Engineering';
+  imageUrl?: string;
 }
 
 export interface Article {
@@ -178,13 +179,13 @@ export const profileData = {
       id: "dep-opdc-cert",
       title: "ประกาศนียบัตร การพัฒนาเพื่อเตรียมความพร้อมสำหรับคนพิการในการทำงานภาครัฐ",
       organization: "กรมส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ (พม.) ร่วมกับ สถาบันส่งเสริมการบริหารกิจการบ้านเมืองที่ดี สำนักงาน ก.พ.ร.",
-      issueDate: "21 ตุลาคม 2569",
+      issueDate: "๒๑ ตุลาคม พ.ศ. ๒๕๖๙",
       docNumber: "โครงการจ้างที่ปรึกษาขับเคลื่อนนโยบายการจ้างงานคนพิการในหน่วยงานภาครัฐ",
       signatories: [
         "นางสาวสนธยา บุณยภูษิต (อธิบดีกรมส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ)",
         "หม่อมหลวงพัชรภากร เทวกุล (ผู้อำนวยการสถาบันส่งเสริมการบริหารกิจการบ้านเมืองที่ดี สำนักงาน ก.พ.ร.)"
       ],
-      description: "ผ่านหลักสูตรการพัฒนาเพื่อเตรียมความพร้อมสำหรับคนพิการในการทำงานภาครัฐ เพื่อเสริมสร้างความรู้ ทักษะ ทัศนคติ และสมรรถนะในการปฏิบัติราชการตามกรอบธรรมาภิบาลภาครัฐยุคใหม่",
+      description: "ผ่านหลักสูตรการพัฒนาเพื่อเตรียมความพร้อมสำหรับคนพิการในการทำงานภาครัฐ โครงการจ้างที่ปรึกษาขับเคลื่อนนโยบายการจ้างงานคนพิการในหน่วยงานภาครัฐ เพื่อเสริมสร้างความรู้ ทักษะ ทัศนคติ และสมรรถนะในการปฏิบัติราชการตามกรอบธรรมาภิบาลภาครัฐยุคใหม่",
       skillsAcquired: [
         "ขับเคลื่อนนโยบายการจ้างงานคนพิการในหน่วยงานภาครัฐ",
         "การบริหารกิจการบ้านเมืองที่ดีตามกรอบ ก.พ.ร. (Good Governance)",
@@ -192,39 +193,39 @@ export const profileData = {
         "การปรับตัวและพัฒนาทัศนคติเชิงวิชาชีพภาครัฐ"
       ],
       badgeColor: "bg-rose-100 text-rose-900 border-rose-300",
-      category: "Government"
+      category: "Government",
+      imageUrl: "/certificates/cert-dep-opdc.jpg"
     },
     {
       id: "justice-cert",
       title: "หนังสือรับรองการฝึกปฏิบัติงานของคนพิการ (117 ชั่วโมง)",
       organization: "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร สำนักงานปลัดกระทรวงยุติธรรม",
-      issueDate: "21 ตุลาคม 2569",
-      docNumber: "เลขที่ 353/2569",
+      issueDate: "๒๑ ตุลาคม พ.ศ. ๒๕๖๙",
+      docNumber: "เลขที่ ๓๕๓/๒๕๖๙",
       signatories: [
-        "นางสาวเปรมมิศา หนูเรืองงาม (ผอ.กองบริหารทรัพยากรบุคคล ปฏิบัติราชการแทน ปลัดกระทรวงยุติธรรม)",
-        "นางสาวธนวรรณ ท้วมยิ้ม (ผอ.ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร)",
-        "นางสาวชนินาถ วิจิตรไพฑูรย์ (นักวิชาการคอมพิวเตอร์ชำนาญการ ผู้กำกับการฝึกปฏิบัติงาน)"
+        "นางสาวเปรมมิศา หนูเรืองงาม (ผู้อำนวยการกองบริหารทรัพยากรบุคคล ปฏิบัติราชการแทน ปลัดกระทรวงยุติธรรม)"
       ],
-      description: "รับรองว่า นาย นิติพัฒน์ คุ้มวงษ์ ผ่านการฝึกปฏิบัติงานตามโครงการเตรียมความพร้อมสำหรับการพัฒนาคนพิการด้านความรู้ ทักษะ ทัศนคติ และสมรรถนะ โดยได้ปฏิบัติหน้าที่ด้วยความวิริยอุตสาหะ และมีความประพฤติเรียบร้อย",
+      description: "รับรองว่า นายนิติพัฒน์ คุ้มวงษ์ ผ่านการฝึกปฏิบัติงานของคนพิการ ตามโครงการกิจกรรมเตรียมความพร้อมสำหรับการพัฒนาคนพิการด้านความรู้ ทักษะ ทัศนคติ และสมรรถนะ ณ ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร สำนักงานปลัดกระทรวงยุติธรรม (1 - 30 กันยายน 2569) ปฏิบัติหน้าที่ด้วยความวิริยะอุตสาหะ และมีความประพฤติเรียบร้อย",
       skillsAcquired: [
         "ปฏิบัติงานจริง 117 ชม. (เกินเกณฑ์ 90 ชม.)",
         "Remote IT Helpdesk (AnyDesk)",
         "ธรรมาภิบาลข้อมูล & มาตรการ PDPA",
         "มาตรฐานการเข้าถึง WCAG 2.1 AA (Screen Reader NVDA)",
-        "Executive Dashboard (Chart.js & Tailwind)"
+        "Executive Dashboard (Chart.js & Tailwind CSS)"
       ],
       badgeColor: "bg-amber-100 text-amber-900 border-amber-300",
-      category: "Government"
+      category: "Government",
+      imageUrl: "/certificates/cert-justice.jpg"
     },
     {
       id: "onde-cert",
       title: "ประกาศนียบัตร บูทแคมป์การออกแบบและขับเคลื่อนรัฐบาลแบบเปิดและเชื่อมโยง",
       organization: "สำนักงานคณะกรรมการดิจิทัลเพื่อเศรษฐกิจและสังคมแห่งชาติ (สดช.) กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
-      issueDate: "20 ธันวาคม 2561",
+      issueDate: "๒๐ ธันวาคม พ.ศ. ๒๕๖๑",
       docNumber: "หลักสูตรพัฒนาข้าราชการและบุคลากรภาครัฐยุคใหม่ (31 ก.ค. - 11 ต.ค. 2561)",
       signatories: [
-        "นางสาวอัจฉรินทร์ พัฒนพันธ์ชัย (ปลัดกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม)",
-        "นางปิยนันท์ วุฒิสอน (เลขาธิการคณะกรรมการดิจิทัลเพื่อเศรษฐกิจและสังคมแห่งชาติ)"
+        "นางปิยนุช วุฒิสอน (เลขาธิการคณะกรรมการดิจิทัลเพื่อเศรษฐกิจและสังคมแห่งชาติ)",
+        "นางสาวอัจฉรินทร์ พัฒนพันธ์ชัย (ปลัดกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม)"
       ],
       description: "ผ่านการอบรมหลักสูตรการพัฒนาข้าราชการและบุคลากรภาครัฐยุคใหม่ บูทแคมป์: การออกแบบและขับเคลื่อนรัฐบาลแบบเปิดและเชื่อมโยง ภายใต้โครงการศึกษาและวิเคราะห์แนวทางการจัดทำมาตรฐานเทคโนโลยีดิจิทัล",
       skillsAcquired: [
@@ -234,18 +235,19 @@ export const profileData = {
         "Digital Transformation Policy"
       ],
       badgeColor: "bg-blue-100 text-blue-900 border-blue-300",
-      category: "Government"
+      category: "Government",
+      imageUrl: "/certificates/cert-onde.jpg"
     },
     {
       id: "jica-cert",
       title: "Certificate: Knowledge Co-Creation Program (Young Leaders) 2015",
       organization: "Japan International Cooperation Agency (JICA) ร่วมกับ Fujitsu Learning Media Limited ณ ประเทศญี่ปุ่น",
-      issueDate: "9 พฤศจิกายน 2558 (November 9, 2015)",
+      issueDate: "November 09, 2015 (9 พฤศจิกายน 2558)",
       docNumber: "Policy on Information Communication Technology Course (Kingdom of Thailand)",
       signatories: [
-        "Shinichi Kitaoka (President, Japan International Cooperation Agency - JICA)"
+        "SHINICHI KITAOKA (President, Japan International Cooperation Agency - JICA)"
       ],
-      description: "ได้รับคัดเลือกเป็นตัวแทนประเทศไทย สำเร็จหลักสูตรนโยบายเทคโนโลยีสารสนเทศและการสื่อสาร (ICT Policy Course) จัดขึ้นภายใต้โครงการความร่วมมือระหว่างประเทศของรัฐบาลญี่ปุ่น",
+      description: "ได้รับคัดเลือกเป็นตัวแทนประเทศไทย สำเร็จหลักสูตรนโยบายเทคโนโลยีสารสนเทศและการสื่อสาร (ICT Policy Course) จัดขึ้นภายใต้โครงการความร่วมมือระหว่างประเทศของรัฐบาลญี่ปุ่น ดำเนินการโดย Fujitsu Learning Media Limited (27 ต.ค. - 9 พ.ย. 2558)",
       skillsAcquired: [
         "National ICT Policy & Infrastructure",
         "Japanese High-Standard Engineering Discipline",
@@ -253,19 +255,20 @@ export const profileData = {
         "Cross-Cultural Leadership & Innovation"
       ],
       badgeColor: "bg-emerald-100 text-emerald-900 border-emerald-300",
-      category: "International"
+      category: "International",
+      imageUrl: "/certificates/cert-jica.jpg"
     },
     {
       id: "sipa-cert",
-      title: "ประกาศนียบัตร การอบรมเชิงปฏิบัติการ PHP Framework (CakePHP)",
-      organization: "สำนักงานส่งเสริมอุตสาหกรรมซอฟต์แวร์แห่งชาติ (องค์การมหาชน - SIPA) ร่วมกับ มหาวิทยาลัยเกษตรศาสตร์",
-      issueDate: "29 กรกฎาคม 2555",
-      docNumber: "โครงการ Open Source Software Finishing School (OSS FOR CORP)",
+      title: "ประกาศนียบัตร การอบรมเชิงปฏิบัติการ PHP Framework - CakePHP",
+      organization: "มหาวิทยาลัยเกษตรศาสตร์ ร่วมกับ สำนักงานส่งเสริมอุตสาหกรรมซอฟต์แวร์แห่งชาติ (องค์การมหาชน - SIPA)",
+      issueDate: "๒๘ กรกฎาคม พ.ศ. ๒๕๕๕ (อบรม 26 - 28 ก.ค. 2555)",
+      docNumber: "ศูนย์สนับสนุนและถ่ายทอดโอเพนซอร์สเทคโนโลยีเพื่อการใช้งานในองค์กร (OSS FOR CORP)",
       signatories: [
-        "นายไตรรัตน์ ฉัตรแก้ว (ผู้อำนวยการ สำนักงานส่งเสริมอุตสาหกรรมซอฟต์แวร์แห่งชาติ - SIPA)",
-        "ผศ. ศิริกร จันทร์นวล (หัวหน้าภาควิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์)"
+        "ผศ. ศิริกร จันทร์นวล (หัวหน้าภาควิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์)",
+        "นายไตรรัตน์ ฉัตรแก้ว (ผู้อำนวยการ สำนักงานส่งเสริมอุตสาหกรรมซอฟต์แวร์แห่งชาติ - SIPA)"
       ],
-      description: "ผ่านการอบรมเชิงปฏิบัติการพัฒนาเว็บแอปพลิเคชันด้วยเทคโนโลยีโอเพนซอร์ส PHP Framework - CakePHP เพื่อการใช้งานในองค์กรอย่างมีมาตรฐานความปลอดภัย",
+      description: "ผ่านการฝึกอบรมหลักสูตรระยะสั้น โครงการอบรมเชิงปฏิบัติการ PHP Framework - CakePHP เพื่อการใช้งานโอเพนซอร์สซอฟต์แวร์ในองค์กรตามมาตรฐานวิศวกรรมสากล",
       skillsAcquired: [
         "MVC Architecture Pattern",
         "Enterprise PHP & Database Abstraction",
@@ -273,7 +276,8 @@ export const profileData = {
         "Open Source Software Deployment"
       ],
       badgeColor: "bg-purple-100 text-purple-900 border-purple-300",
-      category: "Software Engineering"
+      category: "Software Engineering",
+      imageUrl: "/certificates/cert-sipa.jpg"
     }
   ] as Credential[],
 
